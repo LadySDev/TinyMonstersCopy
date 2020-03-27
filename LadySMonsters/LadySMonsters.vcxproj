@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{ABEA91D1-BB09-4F2C-A633-25828D2E287F}</ProjectGuid>
+    <RootNamespace>LadySMonsters</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\sigri\Documents\Libraries\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\sigri\Documents\Libraries\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-window-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\sigri\Documents\Libraries\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\sigri\Documents\Libraries\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-window.lib;sfml-graphics.lib;sfml-system.lib;sfml-main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="element\building\Nursery.cpp" />
+    <ClCompile Include="element\Egg.cpp" />
+    <ClCompile Include="element\EggManager.cpp" />
+    <ClCompile Include="element\Element.cpp" />
+    <ClCompile Include="element\ElementManager.cpp" />
+    <ClCompile Include="element\MonsterManager.cpp" />
+    <ClCompile Include="element\TerrainManager.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameMap.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GameUI.cpp" />
+    <ClCompile Include="ui\barBottom\BarBottomMove.cpp" />
+    <ClCompile Include="ui\barBottom\BarBottomNursery.cpp" />
+    <ClCompile Include="ui\marketBuilding\ButtonCardMarketBuilding.cpp" />
+    <ClCompile Include="ui\marketBuilding\MenuMarketBuilding.cpp" />
+    <ClCompile Include="ui\marketBuilding\PanelMarketBuilding.cpp" />
+    <ClCompile Include="ui\market\ButtonCardMarket.cpp" />
+    <ClCompile Include="ui\marketMonster\ButtonCardMarketMonster.cpp" />
+    <ClCompile Include="ui\marketTerrain\ButtonCardMarketTerrain.cpp" />
+    <ClCompile Include="ui\barBottom\GameUIBarBottomDefault.cpp" />
+    <ClCompile Include="ui\barBottom\GameUIBarBottomTerrain.cpp" />
+    <ClCompile Include="ui\GuiButton.cpp" />
+    <ClCompile Include="IsometricConvertion.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="element\Monster.cpp" />
+    <ClCompile Include="Resource.cpp" />
+    <ClCompile Include="element\Terrain.cpp" />
+    <ClCompile Include="ui\Menu.cpp" />
+    <ClCompile Include="ui\market\MenuMarket.cpp" />
+    <ClCompile Include="ui\marketMonster\MenuMarketMonster.cpp" />
+    <ClCompile Include="ui\marketTerrain\MenuMarketTerrain.cpp" />
+    <ClCompile Include="ui\market\PanelMarket.cpp" />
+    <ClCompile Include="ui\marketMonster\PanelMarketMonster.cpp" />
+    <ClCompile Include="ui\marketTerrain\PanelMarketTerrain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="element\building\Nursery.h" />
+    <ClInclude Include="element\Egg.h" />
+    <ClInclude Include="element\EggManager.h" />
+    <ClInclude Include="element\Element.h" />
+    <ClInclude Include="element\ElementManager.h" />
+    <ClInclude Include="element\MonsterManager.h" />
+    <ClInclude Include="element\TerrainManager.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameMap.h" />
+    <ClInclude Include="GameUI.h" />
+    <ClInclude Include="ui\barBottom\BarBottomMove.h" />
+    <ClInclude Include="ui\barBottom\BarBottomNursery.h" />
+    <ClInclude Include="ui\marketBuilding\ButtonCardMarketBuilding.h" />
+    <ClInclude Include="ui\marketBuilding\MenuMarketBuilding.h" />
+    <ClInclude Include="ui\marketBuilding\PanelMarketBuilding.h" />
+    <ClInclude Include="ui\market\ButtonCardMarket.h" />
+    <ClInclude Include="ui\marketMonster\ButtonCardMarketMonster.h" />
+    <ClInclude Include="ui\marketTerrain\ButtonCardMarketTerrain.h" />
+    <ClInclude Include="ui\barBottom\GameUIBarBottomDefault.h" />
+    <ClInclude Include="ui\barBottom\GameUIBarBottomTerrain.h" />
+    <ClInclude Include="ui\GuiButton.h" />
+    <ClInclude Include="IsometricConvertion.h" />
+    <ClInclude Include="element\Monster.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="element\Terrain.h" />
+    <ClInclude Include="ui\Menu.h" />
+    <ClInclude Include="ui\market\MenuMarket.h" />
+    <ClInclude Include="ui\marketMonster\MenuMarketMonster.h" />
+    <ClInclude Include="ui\marketTerrain\MenuMarketTerrain.h" />
+    <ClInclude Include="ui\market\PanelMarket.h" />
+    <ClInclude Include="ui\marketMonster\PanelMarketMonster.h" />
+    <ClInclude Include="ui\marketTerrain\PanelMarketTerrain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="openal32.dll" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="sfml-audio-d-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="sfml-graphics-d-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-network-d-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="sfml-system-d-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="sfml-window-d-2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resource\Eternity Time.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\terrains-buildings-spritesheet.png" />
+    <Image Include="resource\terrain-smallEarth.png" />
+    <Image Include="resource\terrain-smallFire.png" />
+    <Image Include="resource\UI-menuBg.png" />
+    <Image Include="resource\UI-spritesheet.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
